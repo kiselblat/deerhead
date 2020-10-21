@@ -1,5 +1,9 @@
 import { Frontpage } from './Frontpage';
+import { About } from './About';
+import { Contact } from './Contact';
 
 export {
-    Frontpage
+    Frontpage,
+    About,
+    Contact
 };
