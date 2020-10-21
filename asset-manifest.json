@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/deerhead/static/css/main.da6663f7.chunk.css",
+    "main.js": "/deerhead/static/js/main.ae1512b5.chunk.js",
+    "main.js.map": "/deerhead/static/js/main.ae1512b5.chunk.js.map",
+    "runtime-main.js": "/deerhead/static/js/runtime-main.fc018162.js",
+    "runtime-main.js.map": "/deerhead/static/js/runtime-main.fc018162.js.map",
+    "static/js/2.275c7dc9.chunk.js": "/deerhead/static/js/2.275c7dc9.chunk.js",
+    "static/js/2.275c7dc9.chunk.js.map": "/deerhead/static/js/2.275c7dc9.chunk.js.map",
+    "index.html": "/deerhead/index.html",
+    "precache-manifest.23bf0476dc55f7e39059069ed54d430a.js": "/deerhead/precache-manifest.23bf0476dc55f7e39059069ed54d430a.js",
+    "service-worker.js": "/deerhead/service-worker.js",
+    "static/css/main.da6663f7.chunk.css.map": "/deerhead/static/css/main.da6663f7.chunk.css.map",
+    "static/js/2.275c7dc9.chunk.js.LICENSE": "/deerhead/static/js/2.275c7dc9.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc018162.js",
+    "static/js/2.275c7dc9.chunk.js",
+    "static/css/main.da6663f7.chunk.css",
+    "static/js/main.ae1512b5.chunk.js"
+  ]
+}
