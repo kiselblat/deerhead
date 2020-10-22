@@ -1,0 +1,27 @@
+@import './reset';
+@import './vars';
+
+body
+{
+    background-color: $mustard;
+
+    h1
+    {
+        font-family: $header-font;
+        font-size: 3rem;
+    }
+
+    p
+    {
+        font-family: $copy-font;
+        font-size: 1.2rem;
+    }
+}
+
+.scrim {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}

@@ -1,9 +1,9 @@
-import { Frontpage } from './Frontpage';
+import { Home } from './Home';
 import { About } from './About';
 import { Contact } from './Contact';
 
 export {
-    Frontpage,
+    Home,
     About,
     Contact
 };

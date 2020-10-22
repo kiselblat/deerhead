@@ -1,4 +1,10 @@
+@import './scss/globals.scss';
+
 .App {
-  // text-align: center;
+
+  // max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
