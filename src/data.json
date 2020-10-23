@@ -1,0 +1,36 @@
+{
+    "name": "Black Forest Inn",
+    "hours": {
+        "summary": "Open 3-9pm Daily",
+        "holidays": [
+            "New Year's Day",
+            "Easter",
+            "Memorial Day",
+            "Independence Day",
+            "Labor Day",
+            "Thanksgiving",
+            "Christmas Eve",
+            "Christmas Day",
+            "New Years Eve"
+        ]
+    },
+    "about": {
+        "summary": "The Black Forest has been serving authentic German food to the Whittier neighborhood in Minneapolis for over 50 years.",
+        "est": "1965"
+    },
+    "location": {
+        "intersection": "26th and Nicollet",
+        "address1": "1 East 26th Street",
+        "address2": "Minneapolis, MN 55404",
+        "city": "Minneapolis",
+        "state": "Minnesota",
+        "stateAbbr": "MN",
+        "zip": "55404"
+    },
+    "contact": {
+        "phone": "612-872-0812",
+        "email": "info@blackforestinnmpls.com",
+        "pickupLink": "https://black-forest-inn.square.site/",
+        "deliveryLink": "http://www.bitesquad.com/food/black-forest-inn/37602"
+    }
+}

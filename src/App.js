@@ -1,25 +1,52 @@
-import React, { useState, UseEffect } from 'react';
+import React, { useState, UseEffect, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Home, About, Contact } from './pages'
 import { Header, Footer } from './components'
 // import logo from './logo.svg';
 import './App.scss';
 
+import data from './data.json'
+console.log(data);
 function App() {
+
+  const [orderPopup, setOrderPopup] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [scrollHeight, setScrollHeight] = useState(window.scrollY);
+
+  const handleOrderClick = () => {orderPopup ? setOrderPopup(false) : setOrderPopup(true)}
+
+  const handleResize = () => {setWindowWidth(window.innerWidth)}
+
+  const handleScroll = () => {setScrollHeight(window.scrollY)}
+
+  useEffect(() => {
+    // window.addEventListener("resize", handleResize);
+    window.onresize = handleResize;
+    window.onscroll = handleScroll;
+  }, [])
+
   return (
     <div className="App">
-
+        
+      {orderPopup && 
+        <div className={`popup order-popup`}>
+            <button className={`close-button`} onClick={handleOrderClick}>X</button>
+            <div className={`scrim`} />
+        </div>}
+        <code style={{position: 'fixed', color: 'white'}}>Width: {windowWidth}, Scroll Height: {scrollHeight}</code>
       <Router>
-        <Header />
+        <Header 
+          orderClick={handleOrderClick}
+        />
+            
         {/* <div className = "content"> */}
-
-        <Switch>
-          <Route exact path='/' render={() => {return <Home />}} />
-          <Route exact path='/our-story' render={() => {return <About />}} />
-          <Route exact path='/contact-us' render={() => {return <Contact />}} />
-        </Switch>
-
-        {/* </div>*/}
+          <Switch>
+            <Route exact path='/' render={() => {return <Home data={data} />}} />
+            <Route exact path='/our-story' render={() => {return <About />}} />
+            <Route exact path='/contact-us' render={() => {return <Contact />}} />
+          </Switch>
+        {/* </div> */}
+          {/* <div className='spacer' /> */}
         <Footer />
       </Router>
     

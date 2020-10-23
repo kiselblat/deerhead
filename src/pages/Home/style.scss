@@ -1,3 +1,26 @@
 .Home {
-    
+    display: flex;
+    min-height: fit-content;
+    flex-direction: column;
+    // overflow: auto;
+
+    .story-card {
+
+    }
+
+    .story-card {
+        background-image: url('../../assets/img/sh.griffin.lg.jpg');
+        background-size: 107%;
+        background-position: center center;
+    }
+    .menu-card {
+        background-image: url('../../assets/img/sh.griffin.lg.jpg');
+        background-size: 107%;
+        background-position: center center;
+    }
+    .order-card {
+        background-image: url('../../assets/img/sh.griffin.lg.jpg');
+        background-size: 107%;
+        background-position: center center;
+    }
 }
