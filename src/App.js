@@ -34,16 +34,16 @@ function App() {
             <div className={`scrim`} />
         </div>}
         <code style={{position: 'fixed', color: 'white'}}>Width: {windowWidth}, Scroll Height: {scrollHeight}</code>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Header 
           orderClick={handleOrderClick}
         />
             
         {/* <div className = "content"> */}
           <Switch>
-            <Route exact path='/' render={() => {return <Home data={data} />}} />
-            <Route exact path='/our-story' render={() => {return <About />}} />
-            <Route exact path='/contact-us' render={() => {return <Contact />}} />
+            <Route exact path='/' render={() => <Home data={data} />} />
+            <Route exact path='/our-story' render={() => <About data={data} />} />
+            <Route exact path='/contact-us' render={() => <Contact data={data} />} />
           </Switch>
         {/* </div> */}
           {/* <div className='spacer' /> */}
