@@ -16,10 +16,23 @@ export const Home = (props) => {
                 hours={props.data.hours.summary}
                 contact={contact.phone}
             />
+
+
             <div className={`content-row`}>
-                <div className={`content-card story-card`}><p>Our Story</p></div>
-                <div className={`content-card menu-card`}><p>View Menu</p></div>
-                <div
+                <div className={`card content-card story-card`}><p>Our Story</p></div>
+                <div className={`card content-card menu-card`}><p>View Menu</p></div>
+                <div className={`card flip-card order-card`}>
+                    <div className={`flip-card-inner`}>
+                        <div className={`flip-card-front`}>
+                            <p>Order Now</p>
+                        </div>
+                        <div className={`flip-card-back`}>
+                            <a href={contact.pickupLink}>Pickup</a>
+                            <a href={contact.deliveryLink}>Delivery</a>
+                        </div>
+                    </div>
+                </div>
+                {/* <div
                     className={`content-card order-card ${showOrder ? 'mouseover' : ''}`}
                     onMouseEnter={() => setShowOrder(true)}
                     onMouseLeave={() => setShowOrder(false)}
@@ -30,8 +43,15 @@ export const Home = (props) => {
                         <a href={contact.pickupLink}>Pickup</a>
                         <a href={contact.deliveryLink}>Delivery</a>
                     </div>}
+                </div> */}
+            </div>
+
+            <div className={`content-row`}>
+                <div className={`card content-card`}>
+
                 </div>
             </div>
+
         </div>
     )
 }
